@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task list</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Task list</h1>
+
+        <!-- Alert messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- control buttons -->
+        <div class="controls">
+            <a href="{{ url_for('add') }}" class="btn btn-primary">Add a new task</a>
+            <div class="filters">
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">All</a>
+                <a href="{{ url_for('filter_tasks', status='pending') }}" class="btn btn-warning">Pending</a>
+                <a href="{{ url_for('filter_tasks', status='completed') }}" class="btn btn-success">Complete</a>
+            </div>
+        </div>
+
+        <!-- Task list -->
+        {% if todos %}
+            <div class="todos-list">
+                {% for todo in todos %}
+                    <div class="task-item {% if todo.done %}completed{% endif %}">
+                        <div class="task-content">
+                            <span class="priority priority-{{ todo.priority }}">
+                                {% if todo.priority == 3 %}🔴{% elif todo.priority == 2 %}🟡{% else %}🟢{% endif %}
+                            </span>
+                            <span class="task-text">
+                                {% if todo.done %}
+                                    <s>{{ todo.task }}</s>
+                                {% else %}
+                                    {{ todo.task }}
+                                {% endif %}
+                            </span>
+                            <small class="created-date">{{ todo.created_at[:16] }}</small>
+                        </div>
+                        <div class="task-actions">
+                            <a href="{{ url_for('toggle', todo_id=todo.id) }}"
+                               class="btn btn-sm {% if todo.done %}btn-warning{% else %}btn-success{% endif %}">
+                                {% if todo.done %}Cancel{% else %}Complete{% endif %}
+                            </a>
+                            <a href="{{ url_for('edit', todo_id=todo.id) }}" class="btn btn-sm btn-info">Edit</a>
+                            <a href="{{ url_for('delete', todo_id=todo.id) }}"
+                               class="btn btn-sm btn-danger"
+                               onclick="return confirm('Are you sure about deleting it?')">Delete</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="empty-state">
+                <h3>There are no tasks yet.</h3>
+                <p>Start by adding your first task!</p>
+                <a href="{{ url_for('add') }}" class="btn btn-primary">Add a new task</a>
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
