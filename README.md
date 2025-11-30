@@ -41,7 +41,6 @@ Overall, Todo Manager demonstrates a comprehensive understanding of full-stack d
 # How to Run
 1. Clone the repository:
     git clone https://github.com/omarnagy1/Todo-Manager
-    (Replace with your actual repo URL)
 2. Create and activate a virtual environment:
     python -m venv venvvenv\Scripts\activate (Windows) or source venv/bin/activate (Mac/Linux)
 3. Install dependencies:
@@ -50,6 +49,14 @@ Overall, Todo Manager demonstrates a comprehensive understanding of full-stack d
     flask run
 5. Open in browser:
     http://127.0.0.1:5000/
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Add Task Page
+![Add Task](screenshots/add_task.png)
 
 ## Help
 
