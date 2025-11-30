@@ -1,6 +1,6 @@
 # Todo Manager
 
-#### Video Demo: https://www.youtube.com/watch?v=YOUR_VIDEO_URL_HERE
+#### Video Demo:
 
 #### Description:
 Todo Manager is my CS50 final project: a web-based application built with Python and Flask designed to help users efficiently manage their daily tasks. It allows users to create, update, delete, mark tasks as complete, and filter tasks based on their status. The project uses SQLite as a lightweight, self-contained database, demonstrating fundamental CRUD operations, routing, templating, and state management. This project aims to showcase a fully functional, minimal, and polished web application while applying core concepts learned throughout CS50’s curriculum.
