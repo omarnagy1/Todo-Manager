@@ -53,10 +53,10 @@ Overall, Todo Manager demonstrates a comprehensive understanding of full-stack d
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](https://github.com/omarnagy1/Todo-Manager/blob/main/home.png)
 
 ### Add Task Page
-![Add Task](screenshots/add_task.png)
+![Add Task](https://github.com/omarnagy1/Todo-Manager/blob/main/add_task.png)
 
 ## Help
 
