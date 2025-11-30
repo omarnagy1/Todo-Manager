@@ -67,7 +67,8 @@ omarnagyyali@gmail.com
 
 ## Author
 Omar Nagy
-https://www.linkedin.com/in/omar-nagy-7652b0364?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUgMH%2B24ySY2P429J7iwdAA%3D%3D
+[My LinkedIn Profile](
+https://www.linkedin.com/in/omar-nagy-7652b0364?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUgMH%2B24ySY2P429J7iwdAA%3D%3D)
 
 ## Version History
 
