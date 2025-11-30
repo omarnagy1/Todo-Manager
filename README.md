@@ -50,3 +50,25 @@ Overall, Todo Manager demonstrates a comprehensive understanding of full-stack d
     flask run
 5. Open in browser:
     http://127.0.0.1:5000/
+
+## Help
+
+You can reach out to me if you have any questions
+```
+omarnagyyali@gmail.com
+```
+
+## Author
+Omar Nagy
+https://www.linkedin.com/in/omar-nagy-7652b0364?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUgMH%2B24ySY2P429J7iwdAA%3D%3D
+
+## Version History
+
+* 1.0
+    * Initial commit
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details
+
+
