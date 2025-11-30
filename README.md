@@ -72,7 +72,7 @@ https://www.linkedin.com/in/omar-nagy-7652b0364?lipi=urn%3Ali%3Apage%3Ad_flagshi
 
 ## Version History
 
-* 1.0
+* 1.0.0 — 2025-11-30
     * Initial commit
 
 
