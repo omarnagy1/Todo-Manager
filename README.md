@@ -40,7 +40,7 @@ Overall, Todo Manager demonstrates a comprehensive understanding of full-stack d
 
 # How to Run
 1. Clone the repository:
-    git clone https://github.com/omarnagy1/cs50-todo-finalproject.git
+    git clone https://github.com/omarnagy1/Todo-Manager
     (Replace with your actual repo URL)
 2. Create and activate a virtual environment:
     python -m venv venvvenv\Scripts\activate (Windows) or source venv/bin/activate (Mac/Linux)
